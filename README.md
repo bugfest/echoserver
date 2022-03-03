@@ -1,3 +1,6 @@
+[![Build multiarch image - latest](https://github.com/bugfest/echotest/actions/workflows/main.yml/badge.svg)](https://github.com/bugfest/echotest/actions/workflows/main.yml)
+[![Build multiarch image - tag](https://github.com/bugfest/echotest/actions/workflows/main-tag.yml/badge.svg)](https://github.com/bugfest/echotest/actions/workflows/main-tag.yml)
+
 # echoserver
 Multiarch container for testing purposes
 
