@@ -29,7 +29,7 @@ jobs:
           BUILD_DATE=$(date --rfc-3339=seconds --utc)
           echo ::set-output name=build_date::${BUILD_DATE}
           PLATFORMS=amd64,arm,arm64
-          TAGS1="quay.io/${{ github.repository_owner }}/echotest:${{ steps.vars.outputs.tag }}"
+          TAGS1="quay.io/${{ github.repository_owner }}/echoserver:${{ steps.vars.outputs.tag }}"
           if [ "${{github.event_name}}" == "pull_request" ]; then
                 echo ::set-output name=push::false
               else
@@ -60,7 +60,7 @@ jobs:
           version: latest
           driver-opts: image=moby/buildkit:latest
 
-      - name: Build and push (echotest)
+      - name: Build and push (echoserver)
         uses: docker/build-push-action@v2
         with:
           labels: |
