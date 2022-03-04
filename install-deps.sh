@@ -21,6 +21,6 @@ if [ "${ARCH}" = "s390x" ]; then
     echo "http://dl-cdn.alpinelinux.org/alpine/v3.8/community" >> /etc/apk/repositories
 fi
 
-apk add --no-cache openssl nginx-mod-http-lua nginx-mod-http-lua-upstream
+apk add --no-cache openssl nginx-mod-http-lua nginx-mod-http-lua-upstream nginx
 
 exit 0

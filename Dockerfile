@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM nginx:1.15-alpine
+FROM alpine:3.15
 
 COPY install-deps.sh /
 RUN ["sh", "-c", "/install-deps.sh"]
